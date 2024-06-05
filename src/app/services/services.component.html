@@ -1,1 +1,39 @@
-<p>services works!</p>
+<div class="min-h-screen bg-gray-100 flex flex-col justify-center items-center">
+    <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-md">
+      <h1 class="text-2xl font-bold mb-4 text-center">Mobile Tracking System</h1>
+      <form class="space-y-4">
+        <div>
+          <label for="device-name" class="block text-sm font-medium text-gray-700">Device Name</label>
+          <input type="text" id="device-name" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="Enter device name">
+        </div>
+        <div>
+          <label for="device-image" class="block text-sm font-medium text-gray-700">Device Image</label>
+          <input type="file" id="device-image" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+        </div>
+        <div>
+          <label for="tracing-method" class="block text-sm font-medium text-gray-700">Tracing Method</label>
+          <select id="tracing-method" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+            <option value="gps">GPS</option>
+            <option value="imei">IMEI</option>
+            <option value="phone-number">Phone Number</option>
+          </select>
+        </div>
+        <div id="gps-options" class="hidden">
+          <label for="gps-coordinates" class="block text-sm font-medium text-gray-700">GPS Coordinates</label>
+          <input type="text" id="gps-coordinates" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="Enter GPS coordinates">
+        </div>
+        <div id="imei-options" class="hidden">
+          <label for="imei" class="block text-sm font-medium text-gray-700">IMEI Number</label>
+          <input type="text" id="imei" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="Enter IMEI number">
+        </div>
+        <div id="phone-number-options" class="hidden">
+          <label for="phone-number" class="block text-sm font-medium text-gray-700">Phone Number</label>
+          <input type="text" id="phone-number" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="Enter phone number">
+        </div>
+        <div class="flex justify-center">
+          <button type="submit" class="bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+ 
