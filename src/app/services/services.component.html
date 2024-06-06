@@ -1,39 +1,127 @@
-<div class="min-h-screen bg-gray-100 flex flex-col justify-center items-center">
-    <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-md">
-      <h1 class="text-2xl font-bold mb-4 text-center">Mobile Tracking System</h1>
-      <form class="space-y-4">
-        <div>
-          <label for="device-name" class="block text-sm font-medium text-gray-700">Device Name</label>
-          <input type="text" id="device-name" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="Enter device name">
+<section class="bg-gray-100 py-12">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl md:text-4xl font-semibold mb-8 text-center">Our Services</h2>
+
+    <!-- Service Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Service 1: GPS Tracking -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <img src="https://via.placeholder.com/400x200" alt="GPS Tracking" class="w-full h-40 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">GPS Tracking</h3>
+          <p class="text-gray-700">Track your devices in real-time with precise GPS tracking technology.</p>
         </div>
-        <div>
-          <label for="device-image" class="block text-sm font-medium text-gray-700">Device Image</label>
-          <input type="file" id="device-image" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+      </div>
+
+      <!-- Service 2: IMEI Tracking -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <img src="https://via.placeholder.com/400x200" alt="IMEI Tracking" class="w-full h-40 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">IMEI Tracking</h3>
+          <p class="text-gray-700">Trace your devices using their unique IMEI numbers for accurate location tracking.</p>
         </div>
-        <div>
-          <label for="tracing-method" class="block text-sm font-medium text-gray-700">Tracing Method</label>
-          <select id="tracing-method" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
-            <option value="gps">GPS</option>
-            <option value="imei">IMEI</option>
-            <option value="phone-number">Phone Number</option>
-          </select>
+      </div>
+
+      <!-- Service 3: Phone Number Tracking -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <img src="https://via.placeholder.com/400x200" alt="Phone Number Tracking" class="w-full h-40 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">Phone Number Tracking</h3>
+          <p class="text-gray-700">Locate your devices by tracking their associated phone numbers for efficient monitoring.</p>
         </div>
-        <div id="gps-options" class="hidden">
-          <label for="gps-coordinates" class="block text-sm font-medium text-gray-700">GPS Coordinates</label>
-          <input type="text" id="gps-coordinates" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="Enter GPS coordinates">
-        </div>
-        <div id="imei-options" class="hidden">
-          <label for="imei" class="block text-sm font-medium text-gray-700">IMEI Number</label>
-          <input type="text" id="imei" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="Enter IMEI number">
-        </div>
-        <div id="phone-number-options" class="hidden">
-          <label for="phone-number" class="block text-sm font-medium text-gray-700">Phone Number</label>
-          <input type="text" id="phone-number" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="Enter phone number">
-        </div>
-        <div class="flex justify-center">
-          <button type="submit" class="bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Submit</button>
-        </div>
-      </form>
+      </div>
     </div>
   </div>
- 
+</section>
+
+<div class="min-h-screen bg-gray-100 flex flex-col justify-center items-center">
+  <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-md">
+    <h1 class="text-2xl font-bold mb-4 text-center">Mobile Tracking System</h1>
+    <form class="space-y-4">
+      <div>
+        <label for="device-name" class="block text-sm font-medium text-gray-700">Device Name</label>
+        <input type="text" id="device-name" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="Enter device name">
+      </div>
+      <div>
+        <label for="device-image" class="block text-sm font-medium text-gray-700">Device Image</label>
+        <input type="file" id="device-image" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+      </div>
+      <div>
+        <label for="tracing-method" class="block text-sm font-medium text-gray-700">Tracing Method</label>
+        <select id="tracing-method" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+          <option value="gps">GPS</option>
+          <option value="imei">IMEI</option>
+          <option value="phone-number">Phone Number</option>
+        </select>
+      </div>
+      <div id="unique-identifier-options" class="hidden">
+        <label for="unique-identifier" class="block text-sm font-medium text-gray-700">Unique Identifier</label>
+        <input type="text" id="unique-identifier" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="Enter unique identifier">
+      </div>
+      <div id="gps-options" class="hidden">
+        <label for="gps-coordinates" class="block text-sm font-medium text-gray-700">GPS Coordinates</label>
+        <input type="text" id="gps-coordinates" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="Enter GPS coordinates">
+      </div>
+      <div id="imei-options" class="hidden">
+        <label for="imei" class="block text-sm font-medium text-gray-700">IMEI Number</label>
+        <input type="text" id="imei" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="Enter IMEI number">
+      </div>
+      <div id="phone-number-options" class="hidden">
+        <label for="phone-number" class="block text-sm font-medium text-gray-700">Phone Number</label>
+        <input type="text" id="phone-number" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="Enter phone number">
+      </div>
+      <div class="flex justify-center">
+        <button type="submit" class="bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Submit</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script>
+  document.getElementById('tracing-method').addEventListener('change', function() {
+    var selectedMethod = this.value;
+    var uniqueIdentifierOptions = document.getElementById('unique-identifier-options');
+    var gpsOptions = document.getElementById('gps-options');
+    var imeiOptions = document.getElementById('imei-options');
+    var phoneNumberOptions = document.getElementById('phone-number-options');
+
+    // Reset all options
+    uniqueIdentifierOptions.classList.add('hidden');
+    gpsOptions.classList.add('hidden');
+    imeiOptions.classList.add('hidden');
+    phoneNumberOptions.classList.add('hidden');
+
+    // Show options based on selected method
+    if (selectedMethod === 'gps') {
+      gpsOptions.classList.remove('hidden');
+    } else if (selectedMethod === 'imei') {
+      imeiOptions.classList.remove('hidden');
+    } else if (selectedMethod === 'phone-number') {
+      uniqueIdentifierOptions.classList.remove('hidden');
+    }
+  });
+</script>
+
+
+<script>
+  document.getElementById('tracing-method').addEventListener('change', function() {
+    var selectedMethod = this.value;
+    var gpsOptions = document.getElementById('gps-options');
+    var imeiOptions = document.getElementById('imei-options');
+    var phoneNumberOptions = document.getElementById('phone-number-options');
+
+    // Reset all options
+    gpsOptions.classList.add('hidden');
+    imeiOptions.classList.add('hidden');
+    phoneNumberOptions.classList.add('hidden');
+
+    // Show options based on selected method
+    if (selectedMethod === 'gps') {
+      gpsOptions.classList.remove('hidden');
+    } else if (selectedMethod === 'imei') {
+      imeiOptions.classList.remove('hidden');
+    } else if (selectedMethod === 'phone-number') {
+      phoneNumberOptions.classList.remove('hidden');
+    }
+  });
+</script>
